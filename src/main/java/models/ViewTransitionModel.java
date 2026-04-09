@@ -1,12 +1,14 @@
 package models;
 
+import java.io.IOException;
+
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.SplitPane;
 import javafx.scene.layout.BorderPane;
 
 public class ViewTransitionModel implements ViewTransitionModelInterface {
 
-	SplitPane mainView;
+	BorderPane mainView;
 	
 	public ViewTransitionModel(BorderPane view) {
 		// TODO Auto-generated constructor stub
@@ -19,7 +21,12 @@ public class ViewTransitionModel implements ViewTransitionModelInterface {
 		FXMLLoader loader = new FXMLLoader();
 		loader.setLocation(ViewTransitionModel.class.getResource("../views/cookieView.fxml"));
 		
-		BorderPane view = loader.load();
+		try {
+			BorderPane view = loader.load();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }
