@@ -2,6 +2,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.SplitPane;
+import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import models.CookieModel;
 import views.MainController;
@@ -18,7 +19,7 @@ public class Main extends Application {
 		FXMLLoader loader = new FXMLLoader();
 		loader.setLocation(Main.class.getResource("views/cookieView.fxml"));
 		
-		SplitPane view = loader.load();
+		BorderPane view = loader.load();
 		
 		MainController cont = loader.getController();
 		cont.setModel(new CookieModel());

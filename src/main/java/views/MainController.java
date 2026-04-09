@@ -11,6 +11,7 @@ import models.CookieModel;
 public class MainController {
 	
 	CookieModel model;
+//	ViewTransitionModelInferface model;
 	
     @FXML
     private Label cookieLabel;
