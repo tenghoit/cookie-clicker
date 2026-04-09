@@ -36,32 +36,40 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-<SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.MainController">
-  <items>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="97.0" prefWidth="598.0">
-         <children>
-            <Label layoutX="112.0" layoutY="15.0" prefHeight="50.0" prefWidth="72.0" text="Cookies: " />
-            <Label fx:id="cookieLabel" layoutX="89.0" layoutY="90.0" text="" />
-            <VBox layoutX="409.0" layoutY="-2.0" prefHeight="200.0" prefWidth="189.0">
+
+<BorderPane xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.MainController">
+   <center>
+      <SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="97.0" prefWidth="598.0">
                <children>
-                  <Label text="Costs 50" />
-                  <Button mnemonicParsing="false" onAction="#increaseIncrement1" prefHeight="32.0" prefWidth="158.0" text="Increase count by 1" />
-                  <Label text="Costs 150" />
-                  <Button mnemonicParsing="false" onAction="#increaseIncrement2" prefHeight="32.0" prefWidth="157.0" text="Increase count by 3" />
-                  <Label text="Costs 250" />
-                  <Button mnemonicParsing="false" onAction="#increaseIncrement3" prefHeight="32.0" prefWidth="158.0" text="Increase count by 5" />
-                  <Label text="Costs 25%" />
-                  <Button mnemonicParsing="false" onAction="#randomAdd" prefHeight="32.0" prefWidth="154.0" text="Give 75% to 125%" />
+                  <Label layoutX="112.0" layoutY="15.0" prefHeight="50.0" prefWidth="72.0" text="Cookies: " />
+                  <Label fx:id="cookieLabel" layoutX="89.0" layoutY="90.0" text="" />
+                  <VBox layoutX="409.0" layoutY="-2.0" prefHeight="200.0" prefWidth="189.0">
+                     <children>
+                        <Label text="Costs 50" />
+                        <Button mnemonicParsing="false" onAction="#increaseIncrement1" prefHeight="32.0" prefWidth="158.0" text="Increase count by 1" />
+                        <Label text="Costs 150" />
+                        <Button mnemonicParsing="false" onAction="#increaseIncrement2" prefHeight="32.0" prefWidth="157.0" text="Increase count by 3" />
+                        <Label text="Costs 250" />
+                        <Button mnemonicParsing="false" onAction="#increaseIncrement3" prefHeight="32.0" prefWidth="158.0" text="Increase count by 5" />
+                        <Label text="Costs 25%" />
+                        <Button mnemonicParsing="false" onAction="#randomAdd" prefHeight="32.0" prefWidth="154.0" text="Give 75% to 125%" />
+                     </children>
+                  </VBox>
                </children>
-            </VBox>
-         </children></AnchorPane>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="294.0" prefWidth="598.0">
-         <children>
-            <Button layoutX="76.0" layoutY="8.0" mnemonicParsing="false" onAction="#addCookie" prefHeight="180.0" prefWidth="174.0" text="Cookie " />
-            <Label layoutX="422.0" layoutY="14.0" prefHeight="50.0" prefWidth="129.0" text="Cookies per click:" />
-            <Label fx:id="incrementLabel" layoutX="412.0" layoutY="64.0" prefHeight="50.0" prefWidth="129.0" text="" />
-         </children></AnchorPane>
-  </items>
-</SplitPane>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="294.0" prefWidth="598.0">
+               <children>
+                  <Button layoutX="76.0" layoutY="8.0" mnemonicParsing="false" onAction="#addCookie" prefHeight="180.0" prefWidth="174.0" text="Cookie " />
+                  <Label layoutX="422.0" layoutY="14.0" prefHeight="50.0" prefWidth="129.0" text="Cookies per click:" />
+                  <Label fx:id="incrementLabel" layoutX="412.0" layoutY="64.0" prefHeight="50.0" prefWidth="129.0" text="" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </center>
+</BorderPane>
