@@ -50,27 +50,27 @@
                      <font>
                         <Font size="43.0" />
                      </font></Label>
-                  <Label fx:id="cookieLabel" layoutX="89.0" layoutY="90.0" prefHeight="52.0" prefWidth="172.0" text="">
+                  <Label id="numOfCookie" fx:id="cookieLabel" layoutX="89.0" layoutY="90.0" prefHeight="52.0" prefWidth="172.0" text="">
                      <font>
                         <Font size="30.0" />
                      </font></Label>
                   <VBox layoutX="409.0" layoutY="-2.0" prefHeight="200.0" prefWidth="189.0">
                      <children>
                         <Label text="Costs 50" />
-                        <Button mnemonicParsing="false" onAction="#increaseIncrement1" prefHeight="32.0" prefWidth="158.0" text="Increase count by 1" />
+                        <Button id="IncreaseCount1" mnemonicParsing="false" onAction="#increaseIncrement1" prefHeight="32.0" prefWidth="158.0" text="Increase count by 1" />
                         <Label text="Costs 150" />
-                        <Button mnemonicParsing="false" onAction="#increaseIncrement2" prefHeight="32.0" prefWidth="157.0" text="Increase count by 3" />
+                        <Button id="IncreaseCount3" mnemonicParsing="false" onAction="#increaseIncrement2" prefHeight="32.0" prefWidth="157.0" text="Increase count by 3" />
                         <Label text="Costs 250" />
-                        <Button mnemonicParsing="false" onAction="#increaseIncrement3" prefHeight="32.0" prefWidth="158.0" text="Increase count by 5" />
+                        <Button id="IncreaseCount5" mnemonicParsing="false" onAction="#increaseIncrement3" prefHeight="32.0" prefWidth="158.0" text="Increase count by 5" />
                         <Label text="Costs 25%" />
-                        <Button mnemonicParsing="false" onAction="#randomAdd" prefHeight="32.0" prefWidth="154.0" text="Give 75% to 125%" />
+                        <Button id="toPercent" mnemonicParsing="false" onAction="#randomAdd" prefHeight="32.0" prefWidth="154.0" text="Give 75% to 125%" />
                      </children>
                   </VBox>
                </children>
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="294.0" prefWidth="598.0">
                <children>
-                  <Button layoutX="52.0" layoutY="8.0" mnemonicParsing="false" onAction="#addCookie" prefHeight="180.0" prefWidth="174.0" style="-fx-background-color: tan;" text="Cookie " textFill="#321504">
+                  <Button id="cookieButton" layoutX="52.0" layoutY="8.0" mnemonicParsing="false" onAction="#addCookie" prefHeight="180.0" prefWidth="174.0" style="-fx-background-color: tan;" text="Cookie " textFill="#321504">
                      <font>
                         <Font name="System Bold" size="35.0" />
                      </font></Button>
@@ -78,7 +78,7 @@
                      <font>
                         <Font size="43.0" />
                      </font></Label>
-                  <Label fx:id="incrementLabel" layoutX="273.0" layoutY="78.0" prefHeight="84.0" prefWidth="232.0" text="">
+                  <Label id="cookiePerClick" fx:id="incrementLabel" layoutX="273.0" layoutY="78.0" prefHeight="84.0" prefWidth="232.0" text="">
                      <font>
                         <Font size="30.0" />
                      </font></Label>

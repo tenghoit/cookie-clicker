@@ -1,3 +1,4 @@
+package main;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -17,7 +18,7 @@ public class Main extends Application {
 	public void start(Stage stage) throws Exception {
 		// TODO Auto-generated method stub
 		FXMLLoader loader = new FXMLLoader();
-		loader.setLocation(Main.class.getResource("views/cookieView.fxml"));
+		loader.setLocation(Main.class.getResource("/views/cookieView.fxml"));
 		
 		BorderPane view = loader.load();
 		
